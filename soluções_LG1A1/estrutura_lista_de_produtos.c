@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h> /*usar system()*/
 #include <conio.h> /*usar getch()*/
-#include <locale.h> /*usar acentuaÁ„o*/
+#include <locale.h> /*usar acentua√ß√£o*/
 #include <string.h> /*para o gets() funcionar*/
 
 /*ESTRUTURA DE DADOS*/
@@ -14,7 +14,7 @@ typedef struct
 }
 produtos;
 
-/*VARI¡VEIS*/
+/*VARI√ÅVEIS*/
 produtos	busca_produtos;
 char op;
 
@@ -30,15 +30,15 @@ int main()
 	printf("Insira o nome do produto: ");
 	fflush(stdin);
 	gets(busca_produtos.nome); 
-	printf("Insira o preÁo do produto: ");
+	printf("Insira o pre√ßo do produto: ");
 	fflush(stdin);
 	scanf("%f", &busca_produtos.custo);
 	printf("<><><><><><><><><><><><><><>\n");
 	printf("     CONFIRMANDO DADOS      \n\n");
-	printf("cÛdigo: %i \n", busca_produtos.codigo);
+	printf("c√≥digo: %i \n", busca_produtos.codigo);
 	printf("Nome: %s \n", busca_produtos.nome);
-	printf("preÁo: %.2f \n", busca_produtos.custo);
-	printf("\n\nCadastrar mais produtos? [s=sim][n=n„o]");
+	printf("pre√ßo: %.2f \n", busca_produtos.custo);
+	printf("\n\nCadastrar mais produtos? [s=sim][n=n√£o]");
 	fflush(stdin);
 	op = getche();
 	}
@@ -48,10 +48,8 @@ int main()
 }
 
 /*
-PROXIMAS ETAPAS - (minha parte: menu e cobranÁas)
+PROXIMAS ETAPAS - (minha parte: menu e cobran√ßas)
 
-1- ter a opÁ„o de editar os dados da estrutura na parte "confirmando dados"
+1- ter a op√ß√£o de editar os dados da estrutura na parte "confirmando dados"
 2- salvar os dados da estrutura em arquivo .dat
-3- ler esse arquivo .dat para fazer alguma coisa
-4- arrumar o "lc_all" em todos os progrmas do projeto
 */
